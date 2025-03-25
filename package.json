@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "parcel": "^2.13.3"
+  },
+  "dependencies": {
+    "cannon-es": "^0.20.0",
+    "cannon-es-debugger": "^1.0.0",
+    "three": "^0.174.0",
+    "three-to-cannon": "^5.0.2"
+  }
+}

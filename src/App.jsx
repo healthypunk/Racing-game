@@ -30,7 +30,7 @@ function CarModel() {
         materials.preload();
         loader.setMaterials(materials);
     })
-    const cameraOffset = [-6,5,-5]
+    const cameraOffset = [-2,3,-2]
 
     const leftPressed = useKeyboardControls((state) => state[Controls.left]);
     const rightPressed = useKeyboardControls((state) => state[Controls.right]);
@@ -54,10 +54,11 @@ function CarModel() {
         const torque = { x: 0, y: 0, z: 0 };
 
         if (leftPressed) {
-            
+            impulse.z += 0.0001;
             torque.x += 0.00001;
         }
         if (rightPressed) {
+            impulse.z -= 0.0001;
             torque.x -= 0.00002;
         }
         if (forwardPressed) {
